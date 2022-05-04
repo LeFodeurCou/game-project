@@ -36,7 +36,6 @@
 		"sass": "^1.51.0"
 	},
 	"dependencies": {
-		"public": "file:../lefodeurcou.local",
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0"
 	}
