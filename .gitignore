@@ -15,6 +15,10 @@
 !.babelrc
 !_dev/
 !_dev/**
+!admin/
+!admin/**
+!api/
+!api/**
 
 # End by ignoring git files
 

@@ -4,7 +4,14 @@
 	"description": "A game project",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "parcel _dev/index.html --out-dir $npm_config_public --open",
+		"mk": "make-dir $npm_config_public",
+		"clean": "del --force $npm_config_public",
+		"parcelDev": "parcel build _dev/index.html --out-dir $npm_config_public",
+		"dev": "NODE_ENV=dev run-s clean mk parcelDev postRun",
+		"parcelProd": "parcel build --no-source-maps _dev/index.html --out-dir $npm_config_public",
+		"prod": "NODE_ENV=production run-s clean mk parcelProd postRun",
+		"postRun": "ncp admin $npm_config_public/admin/ && ncp api $npm_config_public/api/"
 	},
 	"repository": {
 		"type": "git",
