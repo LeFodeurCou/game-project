@@ -4,14 +4,14 @@
 	"description": "A game project",
 	"main": "index.js",
 	"scripts": {
-		"start": "parcel _dev/index.html --out-dir $npm_config_public --open",
-		"mk": "make-dir $npm_config_public",
-		"clean": "del --force $npm_config_public",
-		"parcelDev": "parcel build _dev/index.html --out-dir $npm_config_public",
+		"start": "parcel _dev/index.html --out-dir ../www/game.local/public --open",
+		"mk": "make-dir ../www/game.local/public",
+		"clean": "del --force ../www/game.local/public",
+		"parcelDev": "parcel build _dev/index.html --out-dir ../www/game.local/public",
 		"dev": "NODE_ENV=dev run-s clean mk parcelDev postRun",
 		"parcelProd": "parcel build --no-source-maps _dev/index.html --out-dir $npm_config_public",
 		"prod": "NODE_ENV=production run-s clean mk parcelProd postRun",
-		"postRun": "ncp admin $npm_config_public/admin/ && ncp api $npm_config_public/api/"
+		"postRun": "ncp admin ../www/game.local/public/admin/ && ncp api ../www/game.local/public/api/"
 	},
 	"repository": {
 		"type": "git",
