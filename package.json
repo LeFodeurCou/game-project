@@ -1,0 +1,35 @@
+{
+	"name": "game.local",
+	"version": "1.0.0",
+	"description": "A game project",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LeFodeurCou/game-project.git"
+	},
+	"author": "Le Fodeur Cou",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/LeFodeurCou/game-project/issues"
+	},
+	"homepage": "https://github.com/LeFodeurCou/game-project#readme",
+	"devDependencies": {
+		"@babel/core": "^7.17.10",
+		"@babel/preset-env": "^7.17.10",
+		"babel-plugin-transform-remove-console": "^6.9.4",
+		"del-cli": "^4.0.1",
+		"make-dir-cli": "^3.0.0",
+		"move-cli": "^2.0.0",
+		"ncp": "^2.0.0",
+		"npm-run-all": "^4.1.5",
+		"parcel": "^2.5.0",
+		"sass": "^1.51.0"
+	},
+	"dependencies": {
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0"
+	}
+}

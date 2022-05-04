@@ -1,0 +1,25 @@
+# Start by ignoring all
+
+*
+/*
+**/*
+
+# Ignore all files named .DS_Store or ending with .log
+**/.DS_Store
+**.log
+
+# Not ignore file I want to push
+
+!package.json
+!package-lock.json
+!.babelrc
+!_dev/
+!_dev/**
+
+# End by ignoring git files
+
+**/.git
+**/.gitignore
+!.gitignore
+!README.md
+!LICENCE
